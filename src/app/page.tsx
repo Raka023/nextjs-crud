@@ -7,9 +7,7 @@ export default function Home() {
         <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
           Welcome to my Blog App!
         </h1>
-        <h4 className="mt-4 scroll-m-20 text-xl tracking-tight">
-          <Link href="/posts">See the Posts!</Link>
-        </h4>
+        <Link href="/posts" className="mt-4 scroll-m-20 text-xl tracking-tight hover:text-muted-foreground transition">See the Posts!</Link>
       </div>
     </main>
   );
