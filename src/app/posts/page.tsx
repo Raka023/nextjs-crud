@@ -59,6 +59,9 @@ export default async function PostsPage() {
           </Dialog>
         </div>
         <div className="w-full max-w-8xl mt-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 place-items-center gap-6">
+          {postCount <= 0 && (
+            <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">No posts</h3>
+          )}
           {posts.map(({ id, title, slug, content }) => (
             <Card key={id} className="w-full">
               <CardHeader>
